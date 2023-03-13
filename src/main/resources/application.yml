@@ -1,0 +1,20 @@
+spring:
+  kafka:
+    consumer:
+      group-id: A
+      auto-offset-reset: earliest
+    # change this property if you are using your own
+    # Kafka cluster or your Docker IP is different
+    bootstrap-servers: localhost:9092
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+tpd:
+  topic-name: Things-To-Do
+  messages-per-request: 10
+server:
+  port : 8081
+logging:
+  level:
+    root: info
+    org.springframework.web: info
