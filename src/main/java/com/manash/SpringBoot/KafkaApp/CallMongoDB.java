@@ -1,4 +1,4 @@
-package com.manash.SpringBoot.KafkaTest;
+package com.manash.SpringBoot.KafkaApp;
 
 
 import org.springframework.http.HttpHeaders;

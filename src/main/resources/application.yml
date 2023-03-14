@@ -10,7 +10,7 @@ spring:
     value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
 tpd:
-  topic-name: Things-To-Do
+  topic-name: Camunda-AuditTrail-events
   messages-per-request: 10
 server:
   port : 8081

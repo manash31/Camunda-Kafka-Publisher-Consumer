@@ -1,4 +1,4 @@
-package com.manash.SpringBoot.KafkaTest;
+package com.manash.SpringBoot.KafkaApp;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -12,6 +12,6 @@ public class Producer {
 
     public void sendMessageToTopic(String msg){
         System.out.println("Sending Message To Topic");
-        kafkaTemplate.send("Things-To-Do",msg);
+        kafkaTemplate.send("Camunda-AuditTrail-events",msg);
     }
 }
